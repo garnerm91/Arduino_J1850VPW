@@ -1,8 +1,8 @@
 # API
 Create an instance of the class
-for example, create the object 'j'.
+for example, create the object 'vpw'.
 
-`j1850 j;`
+`j1850 vpw;`
 ### Initialization
 
 #### `void j1850::init(int RX_PIN, int TX_PIN, bool debug = false)`
@@ -12,7 +12,7 @@ for example, create the object 'j'.
 
 **Example:**
 ```cpp
-j.init(10, 11, true);
+vpw.init(10, 11, true);
 ```
 
 ### Debugging Mode
@@ -20,7 +20,7 @@ Debugging mode allows you to:
 - View incoming messages.
 - View outgoing messages.
 - Monitor status codes.
-- Run tests.
+
 
 To change modes, send a number via the Serial Console:
 - **1** (default): Display both incoming and outgoing messages.
@@ -46,7 +46,7 @@ byte rx_buf[12];
 ```
 To receive a message:
 ```cpp
-if (j.accept(rx_buf)) {
+if (vpw.accept(rx_buf)) {
     // Process the received message
 }
 ```
@@ -65,7 +65,7 @@ The property **`rx_nbyte`** will contain the number of bytes received.
 **Example:**
 ```cpp
 byte tx_buf[] = {0x00, 0x01, 0x03};
-if (j.send(tx_buf, 3)) {
+if (vpw.send(tx_buf, 3)) {
     // Message sent successfully
 }
 ```
@@ -80,7 +80,7 @@ if (j.send(tx_buf, 3)) {
 
 **Example:**
 ```cpp
-if (j.easy_send(3, 0x00, 0x01, 0x03)) {
+if (vpw.easy_send(3, 0x00, 0x01, 0x03)) {
     // Message sent successfully
 }
 ```
