@@ -1,3 +1,8 @@
+#API
+Create an instance of the class
+for example, create the object 'j'.
+
+`j1850 j;`
 ### Initialization
 
 #### `void j1850::init(int RX_PIN, int TX_PIN, bool debug = false)`
