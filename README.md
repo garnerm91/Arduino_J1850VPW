@@ -1,6 +1,7 @@
 # Arduino_J1850VPW
-This Arduino J1850VPW Project emulates (bit bangs) J1850 VPW 10.4Kb/s.  41.6 Kb/s PWM is not supported. It has been tested in Arduino IDE 2.2.4 on an atmega328P. Get started with the example "ino" file included in "src-j1850" folder. I don't take credit for the code; I only modified it to work how I wanted it to and to be compatible with the atmega328P.
+This Arduino J1850VPW Project emulates (bit bangs) J1850 VPW 10.4Kb/s.  41.6 Kb/s PWM is not supported. It has been tested in Arduino IDE 2.2.4 on an atmega328P. Get started with the example "ino" file included in "src-j1850" folder. I don't take credit for the code; I only modified it to work how I wanted it to and to be compatible with the atmega328P.<BR>
 
+[![Rev A video](https://img.youtube.com/vi/p6Xc6BmUCeE/0.jpg)](https://www.youtube.com/watch?v=p6Xc6BmUCeE)
 
 
 ## Credits
